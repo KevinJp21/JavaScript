@@ -24,7 +24,6 @@ switch(op){
             console.log("|                                      |");
             console.log("|    [1] Prisma.                       |");
             console.log("|    [2] Pirámide.                     |");
-            console.log("|    [3] Esfera.                       |");
             console.log("|    [4] Regresar al menu principal.   |");
             console.log("|                                      |");
             console.log("|======================================|");
@@ -39,10 +38,6 @@ switch(op){
                     break;
                 case 2:
                     console.log('Priramide seleccionada, Regrese al menu principal para calcular el volumen y area.')
-                    solido = op2;
-                    break;
-                case 3:
-                    console.log('Esfera seleccionada, Regrese al menu principal para calcular el volumen y area.')
                     solido = op2;
                     break;
                 default:
@@ -83,4 +78,3 @@ switch(op){
         console.log('Elija una opcion valida');
 }
 }while(op != 4);
-//6 4 8
