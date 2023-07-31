@@ -1,7 +1,7 @@
 import Solido from './Solidos.js';
 /*Menú Principal*/
 let op="", op2="", solido;
-let Longitud,Ancho,Altura;
+let Longitud,Ancho,Altura, LadoBase;
 const Solidos = new Solido();
 
 do{
@@ -34,15 +34,16 @@ switch(op){
             switch(op2){
                 case 1:
                     console.log('Prisma seleccionado, Regrese al menu principal para calcular el volumen y area.');
-                    if(op2===1){
                         solido = op2;
-                    }
+                    
                     break;
                 case 2:
                     console.log('Priramide seleccionada, Regrese al menu principal para calcular el volumen y area.')
+                    solido = op2;
                     break;
                 case 3:
                     console.log('Esfera seleccionada, Regrese al menu principal para calcular el volumen y area.')
+                    solido = op2;
                     break;
                 default:
                     console.log('Ingrese una opcion valida');
@@ -57,12 +58,29 @@ switch(op){
             Ancho = parseInt(prompt('Ingrese el ancho: '));
             Altura = parseInt(prompt('Ingrese la altura: '));
             Solidos.AreaPrisma(Longitud,Ancho,Altura);
+        }else if(solido === 2){
+            
+            LadoBase = parseInt(prompt('Ingrese los lados de la base de la piramide:'));
+            Altura = parseInt(prompt('Ingrese la altura de la priramide:'));
+
+            Solidos.AreaPiramide(LadoBase,Altura);
+        }else if(solido === 3){
+
         }else{
-            console.log('No ha seleccionado un solido.')
+            console.log('No ha seleccionado un solido.');
+        }
+            
+        
+        break;
+    case 3:
+        if(solido === 1){
+            Solidos.VolumenPrisma(Longitud,Ancho,Altura);
+        }else if(solido === 2){
+            Solidos.VolumenPiramide(LadoBase,Altura);
         }
         break;
     default:
-        console.log('Elija una opcion valida')
+        console.log('Elija una opcion valida');
 }
 }while(op != 4);
 //6 4 8
