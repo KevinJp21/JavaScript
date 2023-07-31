@@ -1,4 +1,4 @@
-export default class APrisma{
+export default class Solido{
      AreaPrisma(Longitud, Ancho, Altura) {
         let AreaBase, PerimetroBase,AreaTotal;
 
@@ -8,6 +8,6 @@ export default class APrisma{
 
         AreaTotal = 2*AreaBase+PerimetroBase*Altura;
 
-        console.log('El area de la base es: '+AreaTotal);
+        alert('El area del Prisma es: '+AreaTotal);
     }
 }

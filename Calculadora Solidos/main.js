@@ -1,7 +1,8 @@
-import APrisma from './Prisma.js';
+import Solido from './Solidos.js';
 /*Menú Principal*/
 let op="", op2="", solido;
 let Longitud,Ancho,Altura;
+const Solidos = new Solido();
 
 do{
     console.log("|================================================|");
@@ -51,12 +52,11 @@ switch(op){
     break;
 
     case 2:
-        if(solido = 1){
-            const Prisma = new APrisma();
+        if(solido === 1){
             Longitud = parseInt(prompt('Ingrese la longitud: '));
             Ancho = parseInt(prompt('Ingrese el ancho: '));
             Altura = parseInt(prompt('Ingrese la altura: '));
-            Prisma.AreaPrisma(Longitud,Ancho,Altura);
+            Solidos.AreaPrisma(Longitud,Ancho,Altura);
         }else{
             console.log('No ha seleccionado un solido.')
         }
