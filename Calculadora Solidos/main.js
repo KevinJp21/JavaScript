@@ -59,8 +59,6 @@ switch(op){
             Altura = parseInt(prompt('Ingrese la altura de la priramide:'));
 
             Solidos.AreaPiramide(LadoBase,Altura);
-        }else if(solido === 3){
-
         }else{
             console.log('No ha seleccionado un solido.');
         }
