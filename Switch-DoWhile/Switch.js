@@ -1,6 +1,6 @@
 let op;
 
-let numeroTexto = 'Valor desconocido';
+let numeroTexto = 'Valor desconocido'
 
 do{
 
