@@ -1,3 +1,4 @@
+//Ejercicio: Hagaun codigo que sume la diagonal inferior y superior de una matriz con tamaño impar
 let filas, columnas,SumSup=0,SumInf=0;
 
 const matriz = [];
@@ -18,8 +19,8 @@ if(filas%2 ===0 & columnas%2 === 0){
     console.log(matriz);
         
     
-    for(let i=0; i<filas;i++){
-        for(let j=0;i<columnas;j++){
+    for(let i=0; i < filas;i++){
+        for(let j=0;j < columnas;j++){
             if(j>i){//Se indetermina Suma SUp
                 SumSup = SumSup + matriz[i][j]; 
             }else if(j<i && j != i){
